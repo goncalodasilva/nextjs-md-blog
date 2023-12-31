@@ -48,7 +48,7 @@ After this more nuanced introduction, we are ready to start talking about arrays
 #### Insertion
 Insertion means inserting a new value without deleting any of the previous values. This means that if there is already a value at the index we want to insert we will need to shift all the following values. Take the example array below:
 
-![Alt text](image.png)
+![Alt text](/md-images/ArraysAndHashmaps/image.png)
 If we want to insert 9 at index 2. It's fairly simple:
 ![Alt text](/md-images/ArraysAndHashmaps/image-1.png)
 However, if we want to insert 1 at index 0, that index already has a value so we need to replace all the other elements of the array by one.
