@@ -33,3 +33,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# big files
+bg_video old.mov
+bg_video.mov
+digital-wave-bk-4k.mov
+digital-wave-bk-hd.mov
