@@ -4,8 +4,8 @@ import Link from 'next/link';
 const HomePage = () => {
   return (
     <div className='relative grid place-items-center h-screen bg-black'>
-      <video 
-        src={'https://vzttuuhch5enulra.public.blob.vercel-storage.com/digital-wave-bk-hd-UJx1vLqgDnQ9mgLe5pkmHSZ6xfTorU.mov'} 
+      <video
+        src={'https://firebasestorage.googleapis.com/v0/b/gonsilva-6e9c4.appspot.com/o/gonsilva%2Fdigital-wave-bk-hd.mov?alt=media&token=689e0ed1-c1d5-4297-a897-b6f039cd4fee'} 
         autoPlay 
         loop 
         muted 
