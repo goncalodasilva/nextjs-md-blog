@@ -33,6 +33,7 @@ const projects = [
 const copies = {
   welcome: "Welcome to my personal website. I'm passionate about creating beautiful and functional web experiences.",
   invitation: "Feel free to reach out if you'd like to collaborate on a project or just want to connect.",
+  name: "Gonçalo Silva"
 }
 export default function Home() {
   const portfolioRef = useRef<HTMLDivElement>(null)
@@ -56,7 +57,7 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
-          <h1 className="mb-4 text-5xl font-bold md:text-6xl lg:text-7xl">Goncalo Silva</h1>
+          <h1 className="mb-4 text-5xl font-bold md:text-6xl lg:text-7xl">{copies.name}</h1>
           <p className="mb-8 max-w-2xl px-4 text-xl md:text-2xl">
             {copies.welcome}
           </p>
@@ -112,7 +113,7 @@ export default function Home() {
           </p>
 
           <Link
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/gon%C3%A7alo-silva-798514152/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-6 py-3 text-white transition-colors hover:bg-blue-700"
