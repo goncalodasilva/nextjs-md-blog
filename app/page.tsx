@@ -18,7 +18,7 @@ const projects = [
     id: 2,
     title: "Plot Twist",
     description: "Murder mystery game.",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/PlotTwist.png",
     url: "https://app.plottwist-ai.com/"
   },
   {
