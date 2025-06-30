@@ -3,7 +3,7 @@
 import { useRef } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowDown, Linkedin } from "lucide-react"
+import { ArrowDown, Linkedin, FileText } from "lucide-react"
 
 // Sample project data - replace with your actual projects
 const projects = [
@@ -25,7 +25,7 @@ const projects = [
     id: 3,
     title: "Chat App",
     description: "Clone of a chat app like WhatsApp. I did this project to learn React and make a full-stack application from scratch.",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/chatapp.png",
     url: "https://whatsapp-clone-v2-omega.vercel.app/login"
   }
 ]
@@ -56,7 +56,7 @@ export default function Home() {
       />
         </div>
 
-        <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
+        <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-title">
           <h1 className="mb-4 text-5xl font-bold md:text-6xl lg:text-7xl">{copies.name}</h1>
           <p className="mb-8 max-w-2xl px-4 text-xl md:text-2xl">
             {copies.welcome}
@@ -112,15 +112,27 @@ export default function Home() {
             {copies.invitation}
           </p>
 
-          <Link
-            href="https://www.linkedin.com/in/gon%C3%A7alo-silva-798514152/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-6 py-3 text-white transition-colors hover:bg-blue-700"
-          >
-            <Linkedin className="h-5 w-5" />
-            Connect on LinkedIn
-          </Link>
+          <div className="flex justify-center gap-4">
+            <Link
+              href="https://www.linkedin.com/in/gon%C3%A7alo-silva-798514152/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-6 py-3 text-white transition-colors hover:bg-blue-700"
+            >
+              <Linkedin className="h-5 w-5" />
+              Connect on LinkedIn
+            </Link>
+
+            <Link
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-gray-600 px-6 py-3 text-white transition-colors hover:bg-gray-700"
+            >
+              <FileText className="h-5 w-5" />
+              View Resume
+            </Link>
+          </div>
         </div>
       </section>
     </main>
